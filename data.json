@@ -1,0 +1,81 @@
+{
+  "tags": [
+    { "id": "lunch", "label": "ランチ" },
+    { "id": "cafe", "label": "カフェ" },
+    { "id": "izakaya", "label": "居酒屋" },
+    { "id": "sweets", "label": "スイーツ" }
+  ],
+
+  "spots": [
+    {
+      "area": "station",
+      "name": "近江町市場",
+      "desc": "新鮮な魚介と地元グルメが楽しめる市場。",
+      "url": "https://goo.gl/maps/LennQ8u2BhRPg1SN9",
+      "tags": ["lunch"]
+    },
+    {
+      "area": "station",
+      "name": "カフェ・アルコ",
+      "desc": "おしゃれなカフェ。スイーツも人気。",
+      "url": "https://goo.gl/maps/aUCPcWQDN21nxhKs5",
+      "tags": ["cafe", "sweets"]
+    },
+    {
+      "area": "katamachi",
+      "name": "居酒屋 海彦",
+      "desc": "地元の海鮮が味わえる居酒屋。ランチも提供。",
+      "url": "https://goo.gl/maps/Gt7Rhd9FDKb9F7Kw9",
+      "tags": ["izakaya", "lunch"]
+    },
+    {
+      "area": "katamachi",
+      "name": "くりゑんてぃす",
+      "desc": "落ち着いた雰囲気のカフェ。ケーキもおすすめ。",
+      "url": "https://goo.gl/maps/uctvWF8coU9Uj39y7",
+      "tags": ["cafe", "sweets"]
+    },
+    {
+      "area": "higashichaya",
+      "name": "久連波",
+      "desc": "和スイーツが楽しめる茶屋カフェ。",
+      "url": "https://goo.gl/maps/h6XB47fjTZ7wFkrh8",
+      "tags": ["cafe", "sweets"]
+    },
+    {
+      "area": "higashichaya",
+      "name": "東山茶屋食堂",
+      "desc": "情緒あふれるランチスポット。",
+      "url": "https://goo.gl/maps/RoB68ydmQAtPP5hx9",
+      "tags": ["lunch"]
+    },
+    {
+      "area": "kenrokuen",
+      "name": "兼六亭",
+      "desc": "兼六園そばのランチに便利。",
+      "url": "https://goo.gl/maps/fihs6u9wxHyMcW5c9",
+      "tags": ["lunch"]
+    },
+    {
+      "area": "kenrokuen",
+      "name": "茶屋見城亭",
+      "desc": "兼六園の絶景とスイーツが味わえる。",
+      "url": "https://goo.gl/maps/35tKvNMJViEF9Qhm7",
+      "tags": ["cafe", "sweets"]
+    },
+    {
+      "area": "others",
+      "name": "酒蔵レストラン金澤かわと",
+      "desc": "地酒と郷土料理が楽しめる居酒屋。",
+      "url": "https://goo.gl/maps/Dt3q7JeAN9EecA5j8",
+      "tags": ["izakaya"]
+    },
+    {
+      "area": "others",
+      "name": "ひらみぱん",
+      "desc": "人気のベーカリーカフェ。パン・スイーツ充実。",
+      "url": "https://goo.gl/maps/cd7NZ3vT5MsDpE9EA",
+      "tags": ["cafe", "sweets"]
+    }
+  ]
+}
