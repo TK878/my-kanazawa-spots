@@ -26,7 +26,7 @@ function drawSpots() {
           html += `<li class="spot" data-tags="${spot.tags.join(' ')}">
               <strong>${spot.name}</strong>
               <span style="font-size:90%;">（${spot.desc}）</span>
-              <a href="${spot.url}" target="_blank">Googleマップ</a>
+              <a href="${spot.url}" target="_blank">地図</a>
               <span class="tags">${
               spot.tags.map(tid => `<span>${TAGS.find(t => t.id === tid).label}</span>`).join('')
               }</span>
