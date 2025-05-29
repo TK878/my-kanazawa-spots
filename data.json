@@ -10,28 +10,28 @@
     {
       "area": "ohmicho",
       "name": "近江町市場",
-      "desc": "ここで海鮮丼。間違いなし。駅から徒歩15分。",
+      "desc": "海鮮丼。お好きなお店へ。",
       "url": "https://maps.app.goo.gl/GWyWj8jvrnCBaqnYA",
       "tags": ["lunch"]
     },
     {
       "area": "ohmicho",
       "name": "高崎屋寿し",
-      "desc": "回らない寿司食べたいなら。有名。",
+      "desc": "回らない寿司。",
       "url": "https://maps.app.goo.gl/495iDApZ4gGzTnFE7",
       "tags": ["lunch"]
     },
     {
       "area": "katamachi",
       "name": "せんのさかずき -千の升-",
-      "desc": "有名どころと比べても遜色なし。でも結構空いてる。穴場。",
+      "desc": "穴場居酒屋。",
       "url": "https://maps.app.goo.gl/4yo5sAAuuyHLht43A",
       "tags": ["izakaya"]
     },
     {
       "area": "katamachi",
       "name": "らーめん居酒屋 吟座 FouFou",
-      "desc": "片町でラーメン食べるなら。有名。一件目で行ったっていい。",
+      "desc": "片町deラーメン。",
       "url": "https://maps.app.goo.gl/QepJ2275woMtotQQ8",
       "tags": ["izakaya"]
     },
@@ -45,7 +45,7 @@
     {
       "area": "higashichaya",
       "name": "あめの俵屋 本店",
-      "desc": "場所があれ。でも本店限定「じろバター」のためだけに行く価値あり。",
+      "desc": "じろバター。場所注意。",
       "url": "https://maps.app.goo.gl/4MMrmh3xeircysYV7",
       "tags": ["sweets"]
     },
@@ -59,21 +59,21 @@
     {
       "area": "kenrokuen",
       "name": "時雨亭",
-      "desc": "兼六園内。お抹茶飲める。行って損なし。映えもあり。",
+      "desc": "お抹茶飲める。映え。",
       "url": "https://maps.app.goo.gl/uV932a1rKcVx6T7i7",
       "tags": ["cafe", "sweets"]
     },
     {
       "area": "kenrokuen",
       "name": "古都美",
-      "desc": "とりあえずカフェに入りたいとき。人少なめ。",
+      "desc": "穴場カフェ。",
       "url": "https://maps.app.goo.gl/zGcTTkGXx621Gd3h9",
       "tags": ["cafe"]
     },
     {
       "area": "others",
       "name": "石川県立図書館",
-      "desc": "観光でも十分行く価値あり。映え。",
+      "desc": "行く価値あり。",
       "url": "https://maps.app.goo.gl/3aKQhosDL3ECrPiR9",
       "tags": []
     }
