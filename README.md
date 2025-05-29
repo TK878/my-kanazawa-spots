@@ -1,0 +1,1 @@
+# my-kanazawa-spots
