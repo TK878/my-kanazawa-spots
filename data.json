@@ -8,74 +8,74 @@
 
   "spots": [
     {
-      "area": "station",
+      "area": "ohmicho",
       "name": "近江町市場",
-      "desc": "ここで海鮮丼を食べれば間違いはない。駅から徒歩15分。",
+      "desc": "ここで海鮮丼、間違いなし。駅から徒歩15分。",
       "url": "https://maps.app.goo.gl/GWyWj8jvrnCBaqnYA",
       "tags": ["lunch"]
     },
     {
-      "area": "station",
-      "name": "カフェ・アルコ",
-      "desc": "おしゃれなカフェ。スイーツも人気。",
-      "url": "https://goo.gl/maps/aUCPcWQDN21nxhKs5",
-      "tags": ["cafe", "sweets"]
+      "area": "ohmicho",
+      "name": "高崎屋寿し",
+      "desc": "回らない寿司食べたいなら。有名。",
+      "url": "https://maps.app.goo.gl/495iDApZ4gGzTnFE7",
+      "tags": ["lunch"]
     },
     {
       "area": "katamachi",
-      "name": "居酒屋 海彦",
-      "desc": "地元の海鮮が味わえる居酒屋。ランチも提供。",
-      "url": "https://goo.gl/maps/Gt7Rhd9FDKb9F7Kw9",
-      "tags": ["izakaya", "lunch"]
+      "name": "せんのさかずき -千の升-",
+      "desc": "有名どころと比べても遜色なし。でも結構空いてる。穴場。",
+      "url": "https://maps.app.goo.gl/4yo5sAAuuyHLht43A",
+      "tags": ["izakaya"]
     },
     {
       "area": "katamachi",
-      "name": "くりゑんてぃす",
-      "desc": "落ち着いた雰囲気のカフェ。ケーキもおすすめ。",
-      "url": "https://goo.gl/maps/uctvWF8coU9Uj39y7",
-      "tags": ["cafe", "sweets"]
+      "name": "らーめん居酒屋 吟座 FouFou",
+      "desc": "片町でラーメン食べるなら。有名。一件目で行ったっていい。",
+      "url": "https://maps.app.goo.gl/QepJ2275woMtotQQ8",
+      "tags": ["izakaya"]
     },
     {
       "area": "higashichaya",
-      "name": "久連波",
-      "desc": "和スイーツが楽しめる茶屋カフェ。",
+      "name": "多華味屋 TAKAMIYA",
+      "desc": "ひゃくまんさん焼き。",
       "url": "https://goo.gl/maps/h6XB47fjTZ7wFkrh8",
       "tags": ["cafe", "sweets"]
     },
     {
       "area": "higashichaya",
-      "name": "東山茶屋食堂",
-      "desc": "情緒あふれるランチスポット。",
-      "url": "https://goo.gl/maps/RoB68ydmQAtPP5hx9",
-      "tags": ["lunch"]
+      "name": "あめの俵屋 本店",
+      "desc": "場所があれ。でも本店限定「じろバター」のためだけに行く価値あり。",
+      "url": "https://maps.app.goo.gl/4MMrmh3xeircysYV7",
+      "tags": ["sweets"]
     },
     {
-      "area": "kenrokuen",
-      "name": "兼六亭",
-      "desc": "兼六園そばのランチに便利。",
-      "url": "https://goo.gl/maps/fihs6u9wxHyMcW5c9",
-      "tags": ["lunch"]
-    },
-    {
-      "area": "kenrokuen",
-      "name": "茶屋見城亭",
-      "desc": "兼六園の絶景とスイーツが味わえる。",
-      "url": "https://goo.gl/maps/35tKvNMJViEF9Qhm7",
+      "area": "higashichaya",
+      "name": "大正浪漫喫茶 金魚庵",
+      "desc": "映え。",
+      "url": "https://maps.app.goo.gl/PtGBZGZksXwwunjH9",
       "tags": ["cafe", "sweets"]
     },
     {
-      "area": "others",
-      "name": "酒蔵レストラン金澤かわと",
-      "desc": "地酒と郷土料理が楽しめる居酒屋。",
-      "url": "https://goo.gl/maps/Dt3q7JeAN9EecA5j8",
-      "tags": ["izakaya"]
+      "area": "kenrokuen",
+      "name": "時雨亭",
+      "desc": "兼六園内。お抹茶飲める。行って損なし。映えもあり。",
+      "url": "https://maps.app.goo.gl/uV932a1rKcVx6T7i7",
+      "tags": ["cafe", "sweets"]
+    },
+    {
+      "area": "kenrokuen",
+      "name": "古都美",
+      "desc": "とりあえずカフェに入りたいとき。人少なめ。",
+      "url": "https://maps.app.goo.gl/zGcTTkGXx621Gd3h9",
+      "tags": ["cafe"]
     },
     {
       "area": "others",
-      "name": "ひらみぱん",
-      "desc": "人気のベーカリーカフェ。パン・スイーツ充実。",
-      "url": "https://goo.gl/maps/cd7NZ3vT5MsDpE9EA",
-      "tags": ["cafe", "sweets"]
+      "name": "石川県立図書館",
+      "desc": "観光でも十分行く価値あり。映え。",
+      "url": "https://maps.app.goo.gl/3aKQhosDL3ECrPiR9",
+      "tags": []
     }
   ]
 }
