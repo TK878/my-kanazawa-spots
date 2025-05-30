@@ -1,8 +1,8 @@
 {
   "tags": [
-    { "id": "lunch", "label": "ランチ" },
+    { "id": "lunch", "label": "昼ごはん" },
     { "id": "cafe", "label": "カフェ" },
-    { "id": "izakaya", "label": "居酒屋" },
+    { "id": "dinner", "label": "夜ごはん" },
     { "id": "sweets", "label": "スイーツ" }
   ],
 
@@ -22,18 +22,25 @@
       "tags": ["lunch"]
     },
     {
+      "area": "ohmicho",
+      "name": "ティーハウスサクラ",
+      "desc": "紅茶。おすすめ。",
+      "url": "https://maps.app.goo.gl/bBaH1GzZ2VgrUNuv8",
+      "tags": ["lunch", "cafe"]
+    },
+    {
       "area": "katamachi",
       "name": "せんのさかずき -千の升-",
       "desc": "穴場居酒屋。",
       "url": "https://maps.app.goo.gl/4yo5sAAuuyHLht43A",
-      "tags": ["izakaya"]
+      "tags": ["dinner"]
     },
     {
       "area": "katamachi",
       "name": "らーめん居酒屋 吟座 FouFou",
       "desc": "片町deラーメン。",
       "url": "https://maps.app.goo.gl/QepJ2275woMtotQQ8",
-      "tags": ["izakaya"]
+      "tags": ["dinner"]
     },
     {
       "area": "higashichaya",
@@ -71,10 +78,24 @@
       "tags": ["cafe"]
     },
     {
+      "area": "kenrokuen",
+      "name": "国立工芸館",
+      "desc": "ポケモンマンホールあり。",
+      "url": "https://maps.app.goo.gl/4bEymSmCsL4YyFwH8",
+      "tags": []
+    },
+    {
       "area": "others",
       "name": "石川県立図書館",
       "desc": "行く価値あり。",
       "url": "https://maps.app.goo.gl/3aKQhosDL3ECrPiR9",
+      "tags": []
+    },
+    {
+      "area": "others",
+      "name": "湯涌温泉",
+      "desc": "旅館に泊まるなら。",
+      "url": "https://maps.app.goo.gl/vf2n6AVgLz6ggpAUA",
       "tags": []
     }
   ]
