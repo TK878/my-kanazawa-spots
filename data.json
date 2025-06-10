@@ -1,18 +1,35 @@
 {
   "tags": [
-    { "id": "lunch", "label": "昼ごはん" },
-    { "id": "cafe", "label": "カフェ" },
+    { "id": "lunch", "label": "昼ごはん" },    
     { "id": "dinner", "label": "夜ごはん" },
-    { "id": "sweets", "label": "スイーツ" }
+    { "id": "cafe", "label": "カフェ" },
+    { "id": "sweets", "label": "スイーツ" },
+    { "id": "omiyage", "label": "お土産" },
+    { "id": "kanazawakan", "label": "金沢感" },
+    { "id": "photo", "label": "フォト" }
   ],
 
   "spots": [
+    {
+      "area": "station",
+      "name": "おでん処 大酉茶屋",
+      "desc": "16時からやってる。",
+      "url": "https://maps.app.goo.gl/zgHASvuiwU7TrKFw6",
+      "tags": ["dinner"]
+    },
+    {
+      "area": "station",
+      "name": "思い出ピアノ",
+      "desc": "金沢にもある。",
+      "url": "https://maps.app.goo.gl/bVRcrdfLFUKJzTAm8",
+      "tags": []
+    },
     {
       "area": "ohmicho",
       "name": "近江町市場",
       "desc": "海鮮丼。お好きなお店へ。",
       "url": "https://maps.app.goo.gl/GWyWj8jvrnCBaqnYA",
-      "tags": ["lunch"]
+      "tags": ["lunch","kanazawakan", "photo"]
     },
     {
       "area": "ohmicho",
@@ -38,23 +55,37 @@
     {
       "area": "katamachi",
       "name": "らーめん居酒屋 吟座 FouFou",
-      "desc": "片町deラーメン。",
+      "desc": "2時までやってる。",
       "url": "https://maps.app.goo.gl/QepJ2275woMtotQQ8",
       "tags": ["dinner"]
+    },
+    {
+      "area": "katamachi",
+      "name": "長町武家屋敷跡",
+      "desc": "情緒たっぷり。",
+      "url": "https://maps.app.goo.gl/ZUZuB4ZnTc2xTy2E6",
+      "tags": ["kanazawakan", "photo"]
+    },
+    {
+      "area": "katamachi",
+      "name": "鴻渡園（こうどえん）金沢店",
+      "desc": "お茶を買うなら。",
+      "url": "https://maps.app.goo.gl/mMWG3EceD8vHq8oG6",
+      "tags": ["omiyage"]
     },
     {
       "area": "higashichaya",
       "name": "多華味屋 TAKAMIYA",
       "desc": "ひゃくまんさん焼き。",
       "url": "https://maps.app.goo.gl/vNryLfqH24Uth3JR9",
-      "tags": ["cafe", "sweets"]
+      "tags": ["cafe", "sweets","photo","kanazawakan"]
     },
     {
       "area": "higashichaya",
       "name": "あめの俵屋 本店",
-      "desc": "じろバター。場所注意。",
+      "desc": "じろバター。",
       "url": "https://maps.app.goo.gl/4MMrmh3xeircysYV7",
-      "tags": ["sweets"]
+      "tags": ["sweets","omiyage"]
     },
     {
       "area": "higashichaya",
@@ -64,16 +95,30 @@
       "tags": ["cafe", "sweets"]
     },
     {
+      "area": "higashichaya",
+      "name": "饂飩処・釜ごはん 福わ家",
+      "desc": "読めない。",
+      "url": "https://maps.app.goo.gl/aie2LHMC9GakvebZA",
+      "tags": ["lunch","dinner"]
+    },
+    {
+      "area": "kenrokuen",
+      "name": "兼六園",
+      "desc": "実はタダで朝4時から入れたりする。" ,
+      "url": "https://maps.app.goo.gl/NKyYUXPAeqZYikty8",
+      "tags": ["kanazawakan", "photo"]
+    },
+    {
       "area": "kenrokuen",
       "name": "時雨亭",
-      "desc": "お抹茶飲める。映え。",
+      "desc": "お抹茶飲める。",
       "url": "https://maps.app.goo.gl/uV932a1rKcVx6T7i7",
-      "tags": ["cafe", "sweets"]
+      "tags": ["cafe", "sweets", "photo"]
     },
     {
       "area": "kenrokuen",
       "name": "古都美",
-      "desc": "穴場カフェ。",
+      "desc": "穴場。",
       "url": "https://maps.app.goo.gl/zGcTTkGXx621Gd3h9",
       "tags": ["cafe"]
     },
@@ -82,14 +127,14 @@
       "name": "国立工芸館",
       "desc": "ポケモンマンホールあり。",
       "url": "https://maps.app.goo.gl/4bEymSmCsL4YyFwH8",
-      "tags": []
+      "tags": ["photo"]
     },
     {
       "area": "others",
       "name": "石川県立図書館",
       "desc": "行く価値あり。",
       "url": "https://maps.app.goo.gl/3aKQhosDL3ECrPiR9",
-      "tags": []
+      "tags": ["photo"]
     },
     {
       "area": "others",
