@@ -8,76 +8,99 @@ body {
 header {
   background: #bfa658;
   color: white;
-  padding: 24px 0 8px 0;
+  padding: 7px 0;
   text-align: center;
+  font-size: 0.95em;
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  border-bottom: none;
 }
 
-.area-nav {
-  margin: 12px 0 0 0;
+header h1 {
+  margin: 4px 0;
+  font-size: 1.2em;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
-.area-nav a {
-  color: #fff;
-  background: #2d4f42;
-  text-decoration: none;
-  padding: 8px 16px;
-  margin: 0 5px 8px 0;
-  border-radius: 16px;
+
+/* エリア（場所）フィルター */
+.area-filter {
+  background: #bfa658;
+  padding: 6px 8px;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  position: sticky;
+  /* top: 48px; */
+  z-index: 10;
+  border-bottom: 1px solid #e0d9c4;
+}
+
+.area-filter::-webkit-scrollbar {
+  display: none;
+}
+
+.area-btn {
   display: inline-block;
-  font-size: 1em;
+  margin: 0 4px 4px 0;
+  padding: 6px 14px;
+  border-radius: 16px;
+  border: none;
+  background: #2d4f42;
+  color: #fff;
+  font-size: 0.9em;
+  cursor: pointer;
   transition: background 0.2s;
+  white-space: nowrap;
 }
 
-.area-nav a:hover {
+.area-btn.active,
+.area-btn:hover {
   background: #bfa658;
   color: #2d4f42;
   border: 1px solid #2d4f42;
 }
 
-/* 折りたたみの summary 表示改善（モバイル対策含む） */
-.area-nav summary {
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 1em;
-  margin-bottom: 8px;
-}
-.area-nav details[open] summary::after {
-  content: \"▲\";
-  margin-left: 0.5em;
-}
-.area-nav summary::after {
-  content: \"▼\";
-  margin-left: 0.5em;
-}
-
+/* ジャンル（タグ）フィルター */
 .tag-filter {
-  text-align: center;
-  margin: 18px 0 14px 0;
+  background: #fff9df;
+  padding: 6px 8px 2px 8px;
   overflow-x: auto;
   white-space: nowrap;
-  padding: 0 10px;
+  -webkit-overflow-scrolling: touch;
+  position: sticky;
+  /* top: 96px; */
+  z-index: 9;
+  border-bottom: 1px solid #e0d9c4;
 }
 
-.tag-filter .tag-btn {
+.tag-filter::-webkit-scrollbar {
+  display: none;
+}
+
+.tag-btn {
   display: inline-block;
-  margin: 0 6px 4px 0;
-  padding: 6px 15px;
-  border-radius: 15px;
+  margin: 0 4px 4px 0;
+  padding: 4px 10px;
+  border-radius: 12px;
   border: 1px solid #bfa658;
   background: #fff9df;
   color: #936603;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 0.8em;
   white-space: nowrap;
   transition: background 0.15s;
 }
 
-.tag-filter .tag-btn.active,
-.tag-filter .tag-btn:hover {
+.tag-btn.active,
+.tag-btn:hover {
   background: #bfa658;
   color: #fff;
 }
 
+/* メイン表示 */
 main {
   max-width: 800px;
   margin: 30px auto;
@@ -115,11 +138,15 @@ ul {
   font-weight: bold;
   color: #2d4f42;
   text-decoration: none;
+  position: relative;
 }
 
-.spot-name:hover {
-  text-decoration: underline;
-  color: #936603;
+.spot-name::after {
+  content: "↗";
+  font-size: 0.7em;
+  margin-left: 4px;
+  color: #aaa;
+  vertical-align: top;
 }
 
 .spot-desc {
@@ -127,6 +154,7 @@ ul {
   color: #666;
   font-size: 0.9em;
   margin-top: 2px;
+  margin-left: 7px
 }
 
 .tags {
@@ -143,7 +171,7 @@ ul {
   margin-right: 4px;
 }
 
-a[target=\"_blank\"] {
+a[target="_blank"] {
   font-size: 0.96em;
   color: #2d4f42;
   margin-left: 6px;
@@ -158,12 +186,33 @@ footer {
   margin-top: 24px;
 }
 
-@media (max-width:600px) {
-  main {
-    padding: 15px 2vw;
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1em;
+    letter-spacing: 0.5px;
   }
-  .area-nav a {
-    font-size: 0.88em;
-    padding: 6px 10px;
+
+  .area-btn,
+  .tag-btn {
+    font-size: 0.75em;
+    padding: 4px 8px;
+  }
+
+  main {
+    padding: 16px 4vw;
+    margin-top: 8px;
+  }
+
+  .spot-name {
+    font-size: 1em;
+  }
+
+  .spot-desc {
+    font-size: 0.85em;
+  }
+
+  .tags span {
+    font-size: 0.75em;
+    padding: 1px 6px;
   }
 }

@@ -9,19 +9,14 @@
 <body>
   <header>
     <h1>金沢のおすすめスポット</h1>
-    <nav class="area-nav">
-      <details><summary>エリア選択</summary>
-        <a href="#station">金沢駅</a>
-        <a href="#ohmicho">近江町市場</a>
-        <a href="#katamachi">片町</a>
-        <a href="#higashichaya">ひがし茶屋街</a>
-        <a href="#kenrokuen">兼六園</a>
-        <a href="#nishichaya">にし茶屋街</a>
-        <a href="#others">その他</a>
-      </details>
-    </nav>
   </header>
+
+  <!-- 場所ボタンエリア -->
+  <div class="area-filter"></div>
+
+  <!-- ジャンルボタンエリア -->
   <div class="tag-filter"></div>
+
   <main>
     <section id="station" data-area="station" data-title="金沢駅"></section>
     <section id="ohmicho" data-area="ohmicho" data-title="近江町市場"></section>
@@ -31,10 +26,12 @@
     <section id="nishichaya" data-area="nishichaya" data-title="にし茶屋街"></section>
     <section id="others" data-area="others" data-title="その他"></section>
   </main>
+
   <footer>
     <p>&copy; 2025 TK878</p>
     <p>このサイトは個人の趣味で運営しています。内容の正確性や安全性は保証できませんので、自己責任でご利用ください。</p>
   </footer>
+
   <script src="main.js"></script>
 </body>
 </html>
