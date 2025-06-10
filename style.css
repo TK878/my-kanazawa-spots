@@ -1,113 +1,169 @@
 body {
-    font-family: "Noto Sans JP", sans-serif;
-    background: #f9f7f3;
-    color: #2d2d2d;
-    margin: 0;
+  font-family: "Noto Sans JP", sans-serif;
+  background: #f9f7f3;
+  color: #2d2d2d;
+  margin: 0;
 }
+
 header {
-    background: #bfa658;
-    color: white;
-    padding: 24px 0 8px 0;
-    text-align: center;
+  background: #bfa658;
+  color: white;
+  padding: 24px 0 8px 0;
+  text-align: center;
 }
+
 .area-nav {
-    margin: 12px 0 0 0;
+  margin: 12px 0 0 0;
 }
+
 .area-nav a {
-    color: #fff;
-    background: #2d4f42;
-    text-decoration: none;
-    padding: 8px 16px;
-    margin: 0 5px 8px 0;
-    border-radius: 16px;
-    display: inline-block;
-    font-size: 1em;
-    transition: background 0.2s;
+  color: #fff;
+  background: #2d4f42;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin: 0 5px 8px 0;
+  border-radius: 16px;
+  display: inline-block;
+  font-size: 1em;
+  transition: background 0.2s;
 }
+
 .area-nav a:hover {
-    background: #bfa658;
-    color: #2d4f42;
-    border: 1px solid #2d4f42;
+  background: #bfa658;
+  color: #2d4f42;
+  border: 1px solid #2d4f42;
 }
+
+/* 折りたたみの summary 表示改善（モバイル対策含む） */
+.area-nav summary {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+.area-nav details[open] summary::after {
+  content: \"▲\";
+  margin-left: 0.5em;
+}
+.area-nav summary::after {
+  content: \"▼\";
+  margin-left: 0.5em;
+}
+
 .tag-filter {
-    text-align: center;
-    margin: 18px 0 14px 0;
+  text-align: center;
+  margin: 18px 0 14px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 0 10px;
 }
+
 .tag-filter .tag-btn {
-    display: inline-block;
-    margin: 0 6px 4px 0;
-    padding: 6px 15px;
-    border-radius: 15px;
-    border: 1px solid #bfa658;
-    background: #fff9df;
-    color: #936603;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background 0.15s;
+  display: inline-block;
+  margin: 0 6px 4px 0;
+  padding: 6px 15px;
+  border-radius: 15px;
+  border: 1px solid #bfa658;
+  background: #fff9df;
+  color: #936603;
+  cursor: pointer;
+  font-size: 1em;
+  white-space: nowrap;
+  transition: background 0.15s;
 }
+
 .tag-filter .tag-btn.active,
 .tag-filter .tag-btn:hover {
-    background: #bfa658;
-    color: #fff;
+  background: #bfa658;
+  color: #fff;
 }
+
 main {
-    max-width: 800px;
-    margin: 30px auto;
-    background: #fff;
-    border-radius: 12px;
-    padding: 24px 30px;
-    box-shadow: 0 2px 12px #e7e0c4;
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 24px 30px;
+  box-shadow: 0 2px 12px #e7e0c4;
 }
+
 section[data-area] {
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 }
+
 h2 {
-    border-left: 6px solid #bfa658;
-    padding-left: 8px;
-    margin-top: 32px;
-    margin-bottom: 12px;
-    font-size: 1.2em;
+  border-left: 6px solid #bfa658;
+  padding-left: 8px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  font-size: 1.2em;
 }
+
 ul {
-    padding-left: 24px;
-    list-style: disc;
+  padding-left: 24px;
+  list-style: disc;
 }
+
 .spot {
-    margin-bottom: 10px;
-    line-height: 1.8;
-    transition: all 0.1s;
+  margin-bottom: 14px;
+  line-height: 1.8;
+  transition: all 0.1s;
 }
+
+.spot-name {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #2d4f42;
+  text-decoration: none;
+}
+
+.spot-name:hover {
+  text-decoration: underline;
+  color: #936603;
+}
+
+.spot-desc {
+  display: block;
+  color: #666;
+  font-size: 0.9em;
+  margin-top: 2px;
+}
+
 .tags {
-    margin-left: 8px;
+  margin-top: 4px;
 }
+
 .tags span {
-    display: inline-block;
-    background: #e6db99;
-    color: #976f00;
-    border-radius: 10px;
-    font-size: 0.9em;
-    padding: 2px 8px;
-    margin-right: 4px;
+  display: inline-block;
+  background: #e6db99;
+  color: #976f00;
+  border-radius: 10px;
+  font-size: 0.9em;
+  padding: 2px 8px;
+  margin-right: 4px;
 }
-a[target="_blank"] {
-    font-size: 0.96em;
-    color: #2d4f42;
-    margin-left: 6px;
+
+a[target=\"_blank\"] {
+  font-size: 0.96em;
+  color: #2d4f42;
+  margin-left: 6px;
 }
+
 footer {
-    background: #ebe2cc;
-    text-align: center;
-    color: #5c5040;
-    padding: 14px 0;
-    font-size: 0.95em;
-    margin-top: 24px;
+  background: #ebe2cc;
+  text-align: center;
+  color: #5c5040;
+  padding: 14px 0;
+  font-size: 0.95em;
+  margin-top: 24px;
 }
+
 @media (max-width:600px) {
-    main {
-        padding:15px 2vw;
-    }
-    .area-nav a {
-        font-size: 0.88em;
-        padding: 6px 10px;
-    }
+  main {
+    padding: 15px 2vw;
+  }
+  .area-nav a {
+    font-size: 0.88em;
+    padding: 6px 10px;
+  }
 }
