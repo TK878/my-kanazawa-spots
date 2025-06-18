@@ -19,7 +19,7 @@ header {
 
 header h1 {
   margin: 4px 0;
-  font-size: 1.2em;
+  font-size: 1.5em;
   font-weight: normal;
   letter-spacing: 1px;
 }
@@ -117,7 +117,7 @@ section[data-area] {
 h2 {
   border-left: 6px solid #bfa658;
   padding-left: 8px;
-  margin-top: 32px;
+  margin-top: 1px;
   margin-bottom: 12px;
   font-size: 1.2em;
 }
@@ -139,7 +139,19 @@ ul {
   color: #2d4f42;
   text-decoration: none;
   position: relative;
+  padding-bottom: 2px; /* 下線分のスペース確保 */
 }
+
+.spot-name::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #bfa658; /* 金沢カラー or #cccなども可 */
+}
+
 
 .spot-name::after {
   content: "↗";
@@ -163,11 +175,11 @@ ul {
 
 .tags span {
   display: inline-block;
-  background: #e6db99;
-  color: #976f00;
-  border-radius: 10px;
-  font-size: 0.9em;
-  padding: 2px 8px;
+  background: #f4f0d4;
+  color: #7a672f;
+  font-size: 0.82em;
+  padding: 1px 6px;
+  border-radius: 6px;
   margin-right: 4px;
 }
 
@@ -194,7 +206,7 @@ footer {
 
   .area-btn,
   .tag-btn {
-    font-size: 0.75em;
+    font-size: 0.85em;
     padding: 4px 8px;
   }
 
