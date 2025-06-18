@@ -10,19 +10,34 @@
   ],
 
   "spots": [
+    
+    {
+      "area": "station",
+      "name": "８番らーめん 金沢駅店",
+      "desc": "ソウルフード。",
+      "url": "https://g.co/kgs/ojgZ9cK",
+      "tags": ["dinner", "lunch", "kanazawakan"]
+    },
+    {
+      "area": "station",
+      "name": "金沢肉食堂 百番街店",
+      "desc": "能登牛。",
+      "url": "https://g.co/kgs/KctWjLu",
+      "tags": ["lunch"]
+    },
+    {
+      "area": "station",
+      "name": "金沢駅もてなしドーム地下広場",
+      "desc": "空いてるトイレ、思い出ピアノ、休憩場所。",
+      "url": "https://maps.app.goo.gl/c9Kx53MSQU8ztiyG7",
+      "tags": []
+    },
     {
       "area": "station",
       "name": "おでん処 大酉茶屋",
       "desc": "16時からやってる。",
       "url": "https://maps.app.goo.gl/zgHASvuiwU7TrKFw6",
       "tags": ["dinner"]
-    },
-    {
-      "area": "station",
-      "name": "思い出ピアノ",
-      "desc": "金沢にもある。",
-      "url": "https://maps.app.goo.gl/bVRcrdfLFUKJzTAm8",
-      "tags": []
     },
     {
       "area": "ohmicho",
@@ -62,7 +77,7 @@
     {
       "area": "katamachi",
       "name": "長町武家屋敷跡",
-      "desc": "情緒たっぷり。",
+      "desc": "情緒。",
       "url": "https://maps.app.goo.gl/ZUZuB4ZnTc2xTy2E6",
       "tags": ["kanazawakan", "photo"]
     },
@@ -83,7 +98,7 @@
     {
       "area": "higashichaya",
       "name": "あめの俵屋 本店",
-      "desc": "じろバター。",
+      "desc": "本店限定じろバター。",
       "url": "https://maps.app.goo.gl/4MMrmh3xeircysYV7",
       "tags": ["sweets","omiyage"]
     },
@@ -92,7 +107,7 @@
       "name": "大正浪漫喫茶 金魚庵",
       "desc": "映え。",
       "url": "https://maps.app.goo.gl/PtGBZGZksXwwunjH9",
-      "tags": ["cafe", "sweets"]
+      "tags": ["cafe", "sweets" , "photo"]
     },
     {
       "area": "higashichaya",
@@ -104,7 +119,7 @@
     {
       "area": "kenrokuen",
       "name": "兼六園",
-      "desc": "実はタダで朝4時から入れたりする。" ,
+      "desc": "実は朝4時から入れたりする。" ,
       "url": "https://maps.app.goo.gl/NKyYUXPAeqZYikty8",
       "tags": ["kanazawakan", "photo"]
     },
