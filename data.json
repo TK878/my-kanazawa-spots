@@ -10,20 +10,12 @@
   ],
 
   "spots": [
-    
     {
       "area": "station",
-      "name": "８番らーめん 金沢駅店",
-      "desc": "ソウルフード。",
-      "url": "https://g.co/kgs/ojgZ9cK",
-      "tags": ["dinner", "lunch", "kanazawakan"]
-    },
-    {
-      "area": "station",
-      "name": "金沢肉食堂 百番街店",
-      "desc": "能登牛。",
-      "url": "https://g.co/kgs/KctWjLu",
-      "tags": ["lunch"]
+      "name": "おでん処 大酉茶屋",
+      "desc": "16時からやってる。",
+      "url": "https://maps.app.goo.gl/zgHASvuiwU7TrKFw6",
+      "tags": ["dinner","kanazawakan"]
     },
     {
       "area": "station",
@@ -34,10 +26,38 @@
     },
     {
       "area": "station",
-      "name": "おでん処 大酉茶屋",
-      "desc": "16時からやってる。",
-      "url": "https://maps.app.goo.gl/zgHASvuiwU7TrKFw6",
-      "tags": ["dinner"]
+      "name": "金沢肉食堂 百番街店",
+      "desc": "能登牛。",
+      "url": "https://maps.app.goo.gl/c1Rdx4HX197Te3Bn8",
+      "tags": ["lunch"]
+    },    
+    {
+      "area": "station",
+      "name": "くろ屋",
+      "desc": "居酒屋。有名",
+      "url": "https://maps.app.goo.gl/uEACvzeFwrUC9Fes9",
+      "tags": ["dinner", "kanazawakan"]
+    },
+    {
+      "area": "station",
+      "name": "芝寿し 金沢百番街店",
+      "desc": "駅弁。笹寿し。",
+      "url": "https://maps.app.goo.gl/sYiLTYh96PQkUAQv9",
+      "tags": ["kanazawakan"]
+    },
+    {
+      "area": "station",
+      "name": "８番らーめん 金沢駅店",
+      "desc": "ソウルフード。",
+      "url": "https://maps.app.goo.gl/R4fydc84X73wj5u29",
+      "tags": ["dinner", "lunch", "kanazawakan"]
+    },
+    {
+      "area": "station",
+      "name": "ますのすし本舗 源 金沢百番街あんと店",
+      "desc": "駅弁。ますのすし。",
+      "url": "https://maps.app.goo.gl/frVaAN1sVEQm3H397",
+      "tags": []
     },
     {
       "area": "ohmicho",
@@ -56,7 +76,7 @@
     {
       "area": "ohmicho",
       "name": "ティーハウスサクラ",
-      "desc": "紅茶。おすすめ。",
+      "desc": "紅茶。",
       "url": "https://maps.app.goo.gl/bBaH1GzZ2VgrUNuv8",
       "tags": ["lunch", "cafe"]
     },
@@ -100,14 +120,14 @@
       "name": "あめの俵屋 本店",
       "desc": "本店限定じろバター。",
       "url": "https://maps.app.goo.gl/4MMrmh3xeircysYV7",
-      "tags": ["sweets","omiyage"]
+      "tags": ["sweets","omiyage","kanazawakan"]
     },
     {
       "area": "higashichaya",
       "name": "大正浪漫喫茶 金魚庵",
       "desc": "映え。",
       "url": "https://maps.app.goo.gl/PtGBZGZksXwwunjH9",
-      "tags": ["cafe", "sweets" , "photo"]
+      "tags": ["cafe", "sweets" ,"photo"]
     },
     {
       "area": "higashichaya",
@@ -115,6 +135,20 @@
       "desc": "読めない。",
       "url": "https://maps.app.goo.gl/aie2LHMC9GakvebZA",
       "tags": ["lunch","dinner"]
+    },
+    {
+      "area": "higashichaya",
+      "name": "金箔屋さくだ 本店",
+      "desc": "金箔貼り体験。",
+      "url": "https://maps.app.goo.gl/8eNzWzAvGRWwJ3L19",
+      "tags": ["kanazawakan","omiyage"]
+    },
+    {
+      "area": "higashichaya",
+      "name": "金沢蓄音器館",
+      "desc": "日本でここだけでは。",
+      "url": "https://maps.app.goo.gl/k7Q1L9WivrEDDNsk8",
+      "tags": ["photo"]
     },
     {
       "area": "kenrokuen",
@@ -157,6 +191,13 @@
       "desc": "旅館に泊まるなら。",
       "url": "https://maps.app.goo.gl/vf2n6AVgLz6ggpAUA",
       "tags": []
+    },
+    {
+      "area": "others",
+      "name": "夢ミルク館（ホリ牧場）",
+      "desc": "余裕があれば。",
+      "url": "https://maps.app.goo.gl/zqga81YBUtF1feND8",
+      "tags": ["photo","sweets"]
     }
   ]
 }
