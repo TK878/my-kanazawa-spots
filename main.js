@@ -2,7 +2,7 @@ let TAGS = [];
 let SPOTS = [];
 
 let activeTag = "all";
-let activeArea = "all";
+let activeArea = "station"; // ← 初回は station 表示
 
 function drawTagButtons() {
   const tagFilter = document.querySelector('.tag-filter');
@@ -25,11 +25,13 @@ function drawTagButtons() {
 function drawAreaButtons() {
   const areaFilter = document.querySelector('.area-filter');
   const sections = document.querySelectorAll('section[data-area][data-title]');
-  let html = '<button type="button" class="area-btn active" data-area="all">全て</button>';
+  let html = '<button type="button" class="area-btn" data-area="all">全て</button>';
+
   sections.forEach(sec => {
     const id = sec.getAttribute('data-area');
     const title = sec.getAttribute('data-title');
-    html += `<button type="button" class="area-btn" data-area="${id}">${title}</button>`;
+    const isActive = id === activeArea ? ' active' : '';
+    html += `<button type="button" class="area-btn${isActive}" data-area="${id}">${title}</button>`;
   });
   areaFilter.innerHTML = html;
 
@@ -43,32 +45,39 @@ function drawAreaButtons() {
   });
 }
 
-function drawSpots() {
-  document.querySelectorAll('section[data-area]').forEach(sec => sec.innerHTML = '');
-  const spotsByArea = {};
-  SPOTS.forEach(s => {
-    if (!spotsByArea[s.area]) spotsByArea[s.area] = [];
-    spotsByArea[s.area].push(s);
+function drawSpotsForArea(areaId) {
+  const section = document.getElementById(areaId);
+  if (!section || section.hasChildNodes()) return;
+
+  const spots = SPOTS.filter(s => s.area === areaId);
+  if (spots.length === 0) return;
+
+  let html = `<h2>${section.dataset.title}</h2><ul>`;
+  spots.forEach(spot => {
+    html += `<li class="spot" data-tags="${spot.tags.join(' ')}" data-area="${spot.area}">
+      <a href="${spot.url}" target="_blank" class="spot-name">${spot.name}</a>
+      <span class="spot-desc">${spot.desc}</span>
+      <div class="tags">${
+        spot.tags.map(tid => `<span>${TAGS.find(t => t.id === tid).label}</span>`).join('')
+      }</div>
+    </li>`;
   });
-  Object.keys(spotsByArea).forEach(area => {
-    const section = document.getElementById(area);
-    if (!section) return;
-    let html = `<h2>${section.dataset.title}</h2><ul>`;
-    spotsByArea[area].forEach(spot => {
-      html += `<li class="spot" data-tags="${spot.tags.join(' ')}" data-area="${spot.area}">
-        <a href="${spot.url}" target="_blank" class="spot-name">${spot.name}</a>
-        <span class="spot-desc">${spot.desc}</span>
-        <div class="tags">${
-          spot.tags.map(tid => `<span>${TAGS.find(t => t.id === tid).label}</span>`).join('')
-        }</div>
-      </li>`;
-    });
-    html += '</ul>';
-    section.innerHTML = html;
-  });
+  html += '</ul>';
+  section.innerHTML = html;
 }
 
 function applyFilters() {
+  const sections = document.querySelectorAll('section[data-area]');
+
+  sections.forEach(sec => {
+    const area = sec.dataset.area;
+
+    // 遅延描画：必要なエリアだけ描画
+    if (activeArea === 'all' || area === activeArea) {
+      drawSpotsForArea(area);
+    }
+  });
+
   const spots = document.querySelectorAll('.spot');
   spots.forEach(spot => {
     const tags = spot.dataset.tags.split(' ');
@@ -78,7 +87,7 @@ function applyFilters() {
     spot.style.display = tagMatch && areaMatch ? '' : 'none';
   });
 
-  document.querySelectorAll('section[data-area]').forEach(sec => {
+  sections.forEach(sec => {
     const visible = sec.querySelector('.spot:not([style*="display: none"])');
     sec.style.display = visible ? '' : 'none';
   });
@@ -98,7 +107,6 @@ function adjustStickyOffsets() {
   });
 }
 
-
 window.addEventListener('load', adjustStickyOffsets);
 window.addEventListener('resize', adjustStickyOffsets);
 
@@ -110,6 +118,6 @@ fetch('data.json')
     drawTagButtons();
     drawAreaButtons();
     setTimeout(adjustStickyOffsets, 0);
-    drawSpots();
+    drawSpotsForArea(activeArea); // 初回は station だけ描画
     applyFilters();
   });
